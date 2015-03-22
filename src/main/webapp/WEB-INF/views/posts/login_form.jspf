@@ -1,0 +1,16 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<form:form action="/ektorp/user/authenticate-user/">
+	
+	<div class="section">
+		<label for="userid">User ID :</label>
+		<form:input path="username"/>
+	</div>
+	<div class="section">
+		<label for="pass">Password :</label>
+		<form:input path="password"/>
+	</div>
+	<div>
+		<button type="submit">Login</button>
+	</div>
+</form:form>

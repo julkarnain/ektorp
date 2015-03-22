@@ -1,0 +1,17 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<form:form action="/ektorp/posts/comment">
+	<form:hidden path="dateCreated"/>
+	<form:hidden path="revision"/>
+	<div class="section">
+		<label for="postId">Post Id</label>
+		<form:input path="blogPostId"/>
+	</div>
+	<div class="section">
+		<label for="comment">Comment</label>
+		<form:textarea path="comment"/>
+	</div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+</form:form>
